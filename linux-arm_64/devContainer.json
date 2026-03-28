@@ -1,0 +1,16 @@
+{
+  "name": "Linux ARM 64-bit (arm64/aarch64)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "options": ["--platform=linux/arm64"]
+  },
+  "postCreateCommand": "echo '✅ Ready for ARM 64-bit development'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}

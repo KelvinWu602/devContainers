@@ -1,0 +1,19 @@
+{
+  "name": "Linux x86_32 (386)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "options": ["--platform=linux/386"]
+  },
+  "postCreateCommand": "echo '✅ Ready for x86_32 development'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "features": {
+    // Add any official devcontainer features here if needed (e.g. git, python, etc.)
+  }
+}

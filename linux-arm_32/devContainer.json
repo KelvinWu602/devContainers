@@ -1,0 +1,16 @@
+{
+  "name": "Linux ARM 32-bit (arm/v7)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "options": ["--platform=linux/arm/v7"]
+  },
+  "postCreateCommand": "echo '✅ Ready for ARM 32-bit development'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
+  }
+}
