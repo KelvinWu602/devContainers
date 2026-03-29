@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     wget \
     ca-certificates \
+    gdb \
     && rm -rf /var/lib/apt/lists/*
 
 ARG USERNAME=vscode

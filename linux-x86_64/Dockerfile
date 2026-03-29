@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     wget \
     ca-certificates \
+    gdb \
     && rm -rf /var/lib/apt/lists/*
 
 # Create a non-root user (standard for dev containers)
